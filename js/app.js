@@ -59,11 +59,11 @@ sections.forEach((section) => {
 //Function to check if element in viewport
 
 function inviewport(elem){
-    const rect= elem.getBoundingClientRect()
-     return (
-                rect.top >= -290 && 
+    const rect= elem.getBoundingClientRect();
+    return (
+                rect.top >= -300 && 
                 rect.left >= 0 && 
-                rect.bottom <= (window.innerHeight + 290|| document.documentElement.clientHeight + 290) && 
+                rect.bottom <= (window.innerHeight + 300|| document.documentElement.clientHeight + 300) && 
                 rect.right <= (window.innerWidth || document.documentElement.clientWidth) 
             );
 
