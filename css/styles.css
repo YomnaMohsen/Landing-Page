@@ -89,11 +89,12 @@ section {
     background: #333;
     color: #fff;
     transition: ease 0.3s all;
+    cursor: pointer;
 }
-
+/* active style for nav links*/
 .navbar__menu .active {
-    background-color: aqua;
-    color: blue;
+    background-color: wheat;
+    color: darkblue;
 }
 
 /* Header Styles */

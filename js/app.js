@@ -46,7 +46,6 @@ function build_nav(){
 // foreach loop to iterate on all sections
 sections.forEach((section) => {
     let li_item = document.createElement('li');
-    let anchor = document.createElement('a');
     li_item.textContent = section.dataset.nav;
     li_item.classList.add("menu__link");
     navlist.appendChild(li_item);
@@ -62,9 +61,9 @@ sections.forEach((section) => {
 function inviewport(elem){
     const rect= elem.getBoundingClientRect()
      return (
-                rect.top >= -300 && 
+                rect.top >= -290 && 
                 rect.left >= 0 && 
-                rect.bottom <= (window.innerHeight + 300|| document.documentElement.clientHeight + 300) && 
+                rect.bottom <= (window.innerHeight + 290|| document.documentElement.clientHeight + 290) && 
                 rect.right <= (window.innerWidth || document.documentElement.clientWidth) 
             );
 
@@ -79,7 +78,6 @@ function makeActive(){
         //apply active state on current section and corresponding Nav link
         sections[i].classList.add("your-active-class");
         items_arr[i].classList.add("active");
-        console.log(i + 1);
         } else {
         //Remove active state from other section and corresponding Nav link
         sections[i].classList.remove("your-active-class");
@@ -87,8 +85,6 @@ function makeActive(){
         }
     }
 }
-
-
 
 
 /**
