@@ -23,7 +23,7 @@ The project has the following features:
 
 - Dynamic navigation bar is build as unordered list.
 - Links to sections have smooth scrolling behaviour.
-- The section which is in viewport is heighlighted unlike other sections.
+- The section which is in viewport is highlighted unlike other sections.
 - The landing page is responsive across all smart devices.
 
 ## Getting Started:
